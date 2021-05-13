@@ -1201,11 +1201,13 @@
 
 
     <!-- Preloader -->
-    <script>
 
-        const preloader = document.getElementById('preload');
-        function myFunction(){
-        preloader.style.display = 'none';
+    <script>
+        var loader = document.querySelector('#preload');
+        window.addEventListener("load",vanish);
+
+        function vanish(){
+            loader.classList.add("preload-finish");
         }
     </script>
 </body>
